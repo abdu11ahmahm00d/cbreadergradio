@@ -29,7 +29,7 @@ def read_comic_book(comic_file):
 iface = gr.Interface(
     fn=read_comic_book,
     inputs=File(type="file"),
-    outputs=Gallery(),  # Removed type and plot parameters
+    outputs=Gallery(),
     live=True,
     examples=[["/workspaces/cbreadergradio/examples/KTR2.cbr"], ["/workspaces/cbreadergradio/examples/KTR1.cbz"]],
     allow_flagging='never'
